@@ -1,9 +1,6 @@
 ﻿
 
 Public Class Form2
-
-   
-
     Dim drag As Boolean
     Dim mousex As Integer
     Dim mousey As Integer
@@ -14,7 +11,6 @@ Public Class Form2
             mousex = Windows.Forms.Cursor.Position.X - Me.Left
             mousey = Windows.Forms.Cursor.Position.Y - Me.Top
         End If
-            
     End Sub
 
     Private Sub Form2_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseMove
@@ -27,9 +23,6 @@ Public Class Form2
     Private Sub Form2_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseUp
         drag = False
     End Sub
-
-
-
     Private Sub guardarPerfil()
         Try
             Const fichero As String = "C:\Temp\Perfiles.txt"
@@ -96,7 +89,6 @@ Public Class Form2
             End If
             contenidoPerfil += ("€") 'Separamos campos
 
-
             'Cogemos la curva asignada
             contenidoPerfil += (Me.comboCurvas.Text)
             contenidoPerfil += ("€") 'Separamos campos
@@ -125,27 +117,19 @@ Public Class Form2
             Else
                 MsgBox("El nombre del perfil ya existe")
             End If
-
-
         Catch ex As Exception
             MsgBox(ex.Message)
-
         End Try
     End Sub
 
-
-
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.guardarPerfil()
-
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim ventanaPrincipal = New Form1
-
         Me.Hide()
         ventanaPrincipal.Show()
-
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -161,14 +145,10 @@ Public Class Form2
         For Each curva As String In Curvas
             Me.comboCurvas.Items.Add(curva.ToString)
         Next
-
-
-
     End Sub
 
     Private Function UnicodeStringToBytes(
     ByVal str As String) As Byte()
-
         Return System.Text.Encoding.Unicode.GetBytes(str)
     End Function
 
@@ -184,14 +164,10 @@ Public Class Form2
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Me.guardarPerfil()
         Me.tbNombrePerfil.Clear()
-
-
-
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
         Dim ventanaPrincipal = New Form1
-
         Me.Hide()
         ventanaPrincipal.Show()
     End Sub

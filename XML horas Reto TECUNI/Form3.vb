@@ -83,7 +83,7 @@ Public Class lvCondicionesCelestesActuales
     Sub calcularPerfilActual()
         Try
             Dim webRequest As WebRequest = webRequest.Create("http://www.aemet.es/xml/municipios_h/localidad_h_48020.xml")
-        
+
 
             Dim webResponse As WebResponse = webRequest.GetResponse
             Dim webStream As Stream = webResponse.GetResponseStream
@@ -91,20 +91,9 @@ Public Class lvCondicionesCelestesActuales
             Dim xmlDoc As New XmlDocument
             xmlDoc.Load(webStream)
 
-            'Cargamos XML de fases lunares en la variable
-            Dim rutaFases As String = "D:\DAM3-2\RETO\TECUNI\XML\FasesLunares.xml"
-            Dim fasesLunaresXML = XDocument.Load(rutaFases)
             Dim documento As XmlDocument = New XmlDocument
-            documento.Load(rutaFases)
 
             Dim hoy As String = System.DateTime.Today.Month.ToString + "/" + System.DateTime.Today.Day.ToString + "/" + System.DateTime.Today.Year.ToString
-
-            Dim XPathFaseHoy As String = "//phase[../date='" + hoy + "']/text()"
-            Dim nodosFases = documento.SelectNodes(XPathFaseHoy)
-
-            For Each nodeF As XmlNode In nodosFases
-                faseLunarActual = nodeF.InnerText
-            Next
 
             Dim NodosHoras As XmlNodeList = xmlDoc.SelectNodes("//dia/estado_cielo/@periodo")
             Dim NodosNubes As XmlNodeList = xmlDoc.SelectNodes("//dia/estado_cielo/@descripcion")
@@ -125,7 +114,6 @@ Public Class lvCondicionesCelestesActuales
             Next
             Console.Write(datos)
 
-
             Dim var As Integer
             Dim p As Integer = 0
 
@@ -134,16 +122,9 @@ Public Class lvCondicionesCelestesActuales
                 p = p + 1
             Next
             'condicionesCelestesActuales = datos
-
-
         Catch ex As Exception
-
             Me.Hide()
-
-
         End Try
-
-
     End Sub
 
     Function calcularFaseLunar() As String
@@ -152,7 +133,6 @@ Public Class lvCondicionesCelestesActuales
         Const LunarSynod As Long = 42524 'Tiempo en segundos de la rotación de la luna sobre la tierra.
 
         Dim LunarPhase As Long
-
 
         'Returns lunar phase for TargetDate starting from PhaseBase
         'timestamp forward, at 1/24 cycle intervals, i.e. values
@@ -176,12 +156,8 @@ Public Class lvCondicionesCelestesActuales
             Case 18 To 23
                 fase = "Cuarto Menguante"
         End Select
-
         Return fase
-
     End Function
-
-
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim ventanaPrincipal As New Form4

@@ -51,9 +51,11 @@ Partial Class Form1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.lvCielo)
-        Me.GroupBox1.Location = New System.Drawing.Point(228, 127)
+        Me.GroupBox1.Location = New System.Drawing.Point(304, 156)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(428, 202)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(571, 249)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Condiciones del cielo"
@@ -62,9 +64,11 @@ Partial Class Form1
         '
         Me.lvCielo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lvCielo.FormattingEnabled = True
-        Me.lvCielo.Location = New System.Drawing.Point(3, 16)
+        Me.lvCielo.ItemHeight = 16
+        Me.lvCielo.Location = New System.Drawing.Point(4, 19)
+        Me.lvCielo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lvCielo.Name = "lvCielo"
-        Me.lvCielo.Size = New System.Drawing.Size(422, 183)
+        Me.lvCielo.Size = New System.Drawing.Size(563, 226)
         Me.lvCielo.TabIndex = 0
         '
         'GroupBox2
@@ -75,27 +79,31 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.cbLL)
         Me.GroupBox2.Controls.Add(Me.cbCC)
         Me.GroupBox2.Controls.Add(Me.cbLN)
-        Me.GroupBox2.Location = New System.Drawing.Point(680, 130)
+        Me.GroupBox2.Location = New System.Drawing.Point(907, 160)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(274, 199)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(365, 245)
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Fase lunar"
         '
         'tbCurva
         '
-        Me.tbCurva.Location = New System.Drawing.Point(41, 130)
+        Me.tbCurva.Location = New System.Drawing.Point(55, 160)
+        Me.tbCurva.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbCurva.Name = "tbCurva"
-        Me.tbCurva.Size = New System.Drawing.Size(175, 20)
+        Me.tbCurva.Size = New System.Drawing.Size(232, 22)
         Me.tbCurva.TabIndex = 8
         '
         'cbCM
         '
         Me.cbCM.AutoSize = True
         Me.cbCM.Enabled = False
-        Me.cbCM.Location = New System.Drawing.Point(41, 107)
+        Me.cbCM.Location = New System.Drawing.Point(55, 132)
+        Me.cbCM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbCM.Name = "cbCM"
-        Me.cbCM.Size = New System.Drawing.Size(113, 17)
+        Me.cbCM.Size = New System.Drawing.Size(147, 21)
         Me.cbCM.TabIndex = 3
         Me.cbCM.Text = "Cuarto menguante"
         Me.cbCM.UseVisualStyleBackColor = True
@@ -104,9 +112,10 @@ Partial Class Form1
         '
         Me.cbLL.AutoSize = True
         Me.cbLL.Enabled = False
-        Me.cbLL.Location = New System.Drawing.Point(41, 83)
+        Me.cbLL.Location = New System.Drawing.Point(55, 102)
+        Me.cbLL.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbLL.Name = "cbLL"
-        Me.cbLL.Size = New System.Drawing.Size(77, 17)
+        Me.cbLL.Size = New System.Drawing.Size(99, 21)
         Me.cbLL.TabIndex = 2
         Me.cbLL.Text = "Lluna llena"
         Me.cbLL.UseVisualStyleBackColor = True
@@ -115,9 +124,10 @@ Partial Class Form1
         '
         Me.cbCC.AutoSize = True
         Me.cbCC.Enabled = False
-        Me.cbCC.Location = New System.Drawing.Point(41, 59)
+        Me.cbCC.Location = New System.Drawing.Point(55, 73)
+        Me.cbCC.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbCC.Name = "cbCC"
-        Me.cbCC.Size = New System.Drawing.Size(104, 17)
+        Me.cbCC.Size = New System.Drawing.Size(134, 21)
         Me.cbCC.TabIndex = 1
         Me.cbCC.Text = "Cuarto creciente"
         Me.cbCC.UseVisualStyleBackColor = True
@@ -126,26 +136,29 @@ Partial Class Form1
         '
         Me.cbLN.AutoSize = True
         Me.cbLN.Enabled = False
-        Me.cbLN.Location = New System.Drawing.Point(41, 35)
+        Me.cbLN.Location = New System.Drawing.Point(55, 43)
+        Me.cbLN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbLN.Name = "cbLN"
-        Me.cbLN.Size = New System.Drawing.Size(85, 17)
+        Me.cbLN.Size = New System.Drawing.Size(108, 21)
         Me.cbLN.TabIndex = 0
         Me.cbLN.Text = "Lluna nueva"
         Me.cbLN.UseVisualStyleBackColor = True
         '
         'lvOtrasCondiciones
         '
-        Me.lvOtrasCondiciones.Location = New System.Drawing.Point(231, 354)
+        Me.lvOtrasCondiciones.Location = New System.Drawing.Point(308, 436)
+        Me.lvOtrasCondiciones.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lvOtrasCondiciones.Name = "lvOtrasCondiciones"
-        Me.lvOtrasCondiciones.Size = New System.Drawing.Size(723, 158)
+        Me.lvOtrasCondiciones.Size = New System.Drawing.Size(963, 194)
         Me.lvOtrasCondiciones.TabIndex = 17
         Me.lvOtrasCondiciones.UseCompatibleStateImageBehavior = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(852, 543)
+        Me.Button1.Location = New System.Drawing.Point(1136, 668)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(122, 35)
+        Me.Button1.Size = New System.Drawing.Size(163, 43)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
@@ -154,34 +167,37 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Quicksand Light", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(12, 18)
+        Me.Label1.Location = New System.Drawing.Point(16, 22)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(265, 48)
+        Me.Label1.Size = New System.Drawing.Size(319, 46)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Area de Perfiles"
         '
         'PanelIzq
         '
         Me.PanelIzq.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PanelIzq.BackColor = System.Drawing.Color.Transparent
         Me.PanelIzq.Controls.Add(Me.Button3)
         Me.PanelIzq.Controls.Add(Me.Button2)
         Me.PanelIzq.Controls.Add(Me.GroupBox4)
-        Me.PanelIzq.Location = New System.Drawing.Point(0, 97)
+        Me.PanelIzq.Location = New System.Drawing.Point(0, 119)
+        Me.PanelIzq.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelIzq.Name = "PanelIzq"
-        Me.PanelIzq.Size = New System.Drawing.Size(196, 488)
+        Me.PanelIzq.Size = New System.Drawing.Size(261, 601)
         Me.PanelIzq.TabIndex = 14
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.White
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(130, 435)
+        Me.Button3.Location = New System.Drawing.Point(173, 535)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(60, 47)
+        Me.Button3.Size = New System.Drawing.Size(80, 58)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "Nuevo"
         Me.Button3.UseVisualStyleBackColor = False
@@ -191,9 +207,10 @@ Partial Class Form1
         Me.Button2.BackColor = System.Drawing.Color.White
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(3, 286)
+        Me.Button2.Location = New System.Drawing.Point(4, 352)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(190, 43)
+        Me.Button2.Size = New System.Drawing.Size(253, 53)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "Modificar"
         Me.Button2.UseVisualStyleBackColor = False
@@ -202,9 +219,11 @@ Partial Class Form1
         '
         Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox4.Controls.Add(Me.cbPerfiles)
-        Me.GroupBox4.Location = New System.Drawing.Point(12, 11)
+        Me.GroupBox4.Location = New System.Drawing.Point(16, 14)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(171, 269)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Size = New System.Drawing.Size(228, 331)
         Me.GroupBox4.TabIndex = 9
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Perfiles"
@@ -213,20 +232,20 @@ Partial Class Form1
         '
         Me.cbPerfiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbPerfiles.FormattingEnabled = True
-        Me.cbPerfiles.Location = New System.Drawing.Point(7, 19)
+        Me.cbPerfiles.Location = New System.Drawing.Point(9, 23)
+        Me.cbPerfiles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbPerfiles.Name = "cbPerfiles"
-        Me.cbPerfiles.Size = New System.Drawing.Size(158, 21)
+        Me.cbPerfiles.Size = New System.Drawing.Size(209, 24)
         Me.cbPerfiles.TabIndex = 2
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(993, 585)
-        Me.ControlBox = False
+        Me.ClientSize = New System.Drawing.Size(1280, 720)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lvOtrasCondiciones)
@@ -234,11 +253,10 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PanelIzq)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximizeBox = False
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Area de Perfiles"
-        Me.TransparencyKey = System.Drawing.SystemColors.ActiveCaption
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

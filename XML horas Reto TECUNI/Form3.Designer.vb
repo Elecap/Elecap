@@ -42,11 +42,12 @@ Partial Class lvCondicionesCelestesActuales
         '
         Me.lbTitulo.AutoSize = True
         Me.lbTitulo.BackColor = System.Drawing.Color.Transparent
-        Me.lbTitulo.Font = New System.Drawing.Font("Quicksand Light", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbTitulo.ForeColor = System.Drawing.Color.White
-        Me.lbTitulo.Location = New System.Drawing.Point(23, 74)
+        Me.lbTitulo.Location = New System.Drawing.Point(31, 91)
+        Me.lbTitulo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbTitulo.Name = "lbTitulo"
-        Me.lbTitulo.Size = New System.Drawing.Size(169, 35)
+        Me.lbTitulo.Size = New System.Drawing.Size(185, 36)
         Me.lbTitulo.TabIndex = 0
         Me.lbTitulo.Text = "dd/MM/yyyy"
         '
@@ -55,9 +56,11 @@ Partial Class lvCondicionesCelestesActuales
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.lbCondicionesCelestes)
         Me.GroupBox1.Font = New System.Drawing.Font("Calibri", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(20, 323)
+        Me.GroupBox1.Location = New System.Drawing.Point(27, 398)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(536, 126)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(715, 155)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Condiciones celestes:"
@@ -66,10 +69,11 @@ Partial Class lvCondicionesCelestesActuales
         '
         Me.lbCondicionesCelestes.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbCondicionesCelestes.FormattingEnabled = True
-        Me.lbCondicionesCelestes.ItemHeight = 19
-        Me.lbCondicionesCelestes.Location = New System.Drawing.Point(9, 24)
+        Me.lbCondicionesCelestes.ItemHeight = 24
+        Me.lbCondicionesCelestes.Location = New System.Drawing.Point(12, 30)
+        Me.lbCondicionesCelestes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lbCondicionesCelestes.Name = "lbCondicionesCelestes"
-        Me.lbCondicionesCelestes.Size = New System.Drawing.Size(519, 80)
+        Me.lbCondicionesCelestes.Size = New System.Drawing.Size(691, 76)
         Me.lbCondicionesCelestes.TabIndex = 0
         '
         'GroupBox2
@@ -77,18 +81,21 @@ Partial Class lvCondicionesCelestesActuales
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.tbFaseLunarActual)
         Me.GroupBox2.Font = New System.Drawing.Font("Calibri", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(20, 172)
+        Me.GroupBox2.Location = New System.Drawing.Point(27, 212)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(164, 58)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(219, 71)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Fase lunar actual: "
         '
         'tbFaseLunarActual
         '
-        Me.tbFaseLunarActual.Location = New System.Drawing.Point(9, 24)
+        Me.tbFaseLunarActual.Location = New System.Drawing.Point(12, 30)
+        Me.tbFaseLunarActual.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbFaseLunarActual.Name = "tbFaseLunarActual"
-        Me.tbFaseLunarActual.Size = New System.Drawing.Size(151, 25)
+        Me.tbFaseLunarActual.Size = New System.Drawing.Size(200, 30)
         Me.tbFaseLunarActual.TabIndex = 0
         '
         'C
@@ -96,29 +103,33 @@ Partial Class lvCondicionesCelestesActuales
         Me.C.BackColor = System.Drawing.Color.Transparent
         Me.C.Controls.Add(Me.TextBox1)
         Me.C.Font = New System.Drawing.Font("Calibri", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.C.Location = New System.Drawing.Point(20, 236)
+        Me.C.Location = New System.Drawing.Point(27, 290)
+        Me.C.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.C.Name = "C"
-        Me.C.Size = New System.Drawing.Size(164, 76)
+        Me.C.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.C.Size = New System.Drawing.Size(219, 94)
         Me.C.TabIndex = 6
         Me.C.TabStop = False
         Me.C.Text = "GroupBox3"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(9, 24)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 30)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 25)
+        Me.TextBox1.Size = New System.Drawing.Size(200, 30)
         Me.TextBox1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Quicksand Light", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(8, 43)
+        Me.Label1.Location = New System.Drawing.Point(11, 53)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(220, 31)
+        Me.Label1.Size = New System.Drawing.Size(273, 31)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Previsión para hoy: "
         '
@@ -130,29 +141,31 @@ Partial Class lvCondicionesCelestesActuales
         Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(522, 12)
+        Me.Button3.Location = New System.Drawing.Point(696, 15)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(34, 36)
+        Me.Button3.Size = New System.Drawing.Size(45, 44)
         Me.Button3.TabIndex = 7
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(360, 43)
+        Me.Button1.Location = New System.Drawing.Point(480, 53)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(127, 83)
+        Me.Button1.Size = New System.Drawing.Size(169, 102)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'lvCondicionesCelestesActuales
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(574, 471)
-        Me.ControlBox = False
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(765, 580)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label1)
@@ -161,7 +174,7 @@ Partial Class lvCondicionesCelestesActuales
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximizeBox = False
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "lvCondicionesCelestesActuales"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
