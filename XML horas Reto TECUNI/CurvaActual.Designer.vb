@@ -36,6 +36,7 @@ Partial Class CurvaActual
         Me.pbCielo = New System.Windows.Forms.PictureBox()
         Me.pbLuna = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.pbCurvaBegona, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaSantutxu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaBolueta, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,8 +47,8 @@ Partial Class CurvaActual
         'pbCurvaBegona
         '
         Me.pbCurvaBegona.BackColor = System.Drawing.Color.Transparent
-        Me.pbCurvaBegona.BackgroundImage = CType(resources.GetObject("pbCurvaBegona.BackgroundImage"), System.Drawing.Image)
         Me.pbCurvaBegona.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbCurvaBegona.InitialImage = Nothing
         Me.pbCurvaBegona.Location = New System.Drawing.Point(91, 229)
         Me.pbCurvaBegona.Name = "pbCurvaBegona"
         Me.pbCurvaBegona.Size = New System.Drawing.Size(151, 126)
@@ -190,12 +191,31 @@ Partial Class CurvaActual
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Curvas para esta noche:"
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button3.Location = New System.Drawing.Point(947, 12)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(34, 36)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "X"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'CurvaActual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(993, 585)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.pbLuna)
         Me.Controls.Add(Me.pbCielo)
@@ -211,6 +231,7 @@ Partial Class CurvaActual
         Me.Controls.Add(Me.pbCurvaBegona)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "CurvaActual"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CurvaActual"
         CType(Me.pbCurvaBegona, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCurvaSantutxu, System.ComponentModel.ISupportInitialize).EndInit()
@@ -234,4 +255,5 @@ Partial Class CurvaActual
     Friend WithEvents pbCielo As System.Windows.Forms.PictureBox
     Friend WithEvents pbLuna As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As Windows.Forms.Button
 End Class
