@@ -165,7 +165,7 @@ Partial Class Form1
         'PanelIzq
         '
         Me.PanelIzq.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PanelIzq.BackColor = System.Drawing.Color.Transparent
         Me.PanelIzq.Controls.Add(Me.Button3)
         Me.PanelIzq.Controls.Add(Me.Button2)

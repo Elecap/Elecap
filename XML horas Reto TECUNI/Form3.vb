@@ -1,6 +1,8 @@
 ﻿Imports System.IO
 Imports System.Net
 Imports System.Xml
+Imports Prevision
+
 
 Public Class lvCondicionesCelestesActuales
 
@@ -61,7 +63,11 @@ Public Class lvCondicionesCelestesActuales
         Try
             calcularPerfilActual()
 
-            tbFaseLunarActual.Text = calcularFaseLunar()
+            'tbFaseLunarActual.Text = calcularFaseLunar()
+            tbFaseLunarActual.Text = Prevision.getFaseLunar()
+
+
+
 
             For Each condicion In condicionesCelestesActuales
                 Me.lbCondicionesCelestes.Items.Add(condicion)
@@ -82,49 +88,51 @@ Public Class lvCondicionesCelestesActuales
 
     Sub calcularPerfilActual()
         Try
-            Dim webRequest As WebRequest = webRequest.Create("http://www.aemet.es/xml/municipios_h/localidad_h_48020.xml")
-        
+            'Dim webRequest As WebRequest = webRequest.Create("http://www.aemet.es/xml/municipios_h/localidad_h_48020.xml")
 
-            Dim webResponse As WebResponse = webRequest.GetResponse
-            Dim webStream As Stream = webResponse.GetResponseStream
 
-            Dim xmlDoc As New XmlDocument
-            xmlDoc.Load(webStream)
+            'Dim webResponse As WebResponse = webRequest.GetResponse
+            'Dim webStream As Stream = webResponse.GetResponseStream
 
-            'Cargamos XML de fases lunares en la variable
-            Dim rutaFases As String = "D:\DAM3-2\RETO\TECUNI\XML\FasesLunares.xml"
-            Dim fasesLunaresXML = XDocument.Load(rutaFases)
-            Dim documento As XmlDocument = New XmlDocument
-            documento.Load(rutaFases)
+            'Dim xmlDoc As New XmlDocument
+            'xmlDoc.Load(webStream)
 
-            Dim hoy As String = System.DateTime.Today.Month.ToString + "/" + System.DateTime.Today.Day.ToString + "/" + System.DateTime.Today.Year.ToString
+            ''Cargamos XML de fases lunares en la variable
+            'Dim rutaFases As String = "D:\DAM3-2\RETO\TECUNI\XML\FasesLunares.xml"
+            'Dim fasesLunaresXML = XDocument.Load(rutaFases)
+            'Dim documento As XmlDocument = New XmlDocument
+            'documento.Load(rutaFases)
 
-            Dim XPathFaseHoy As String = "//phase[../date='" + hoy + "']/text()"
-            Dim nodosFases = documento.SelectNodes(XPathFaseHoy)
+            'Dim hoy As String = System.DateTime.Today.Month.ToString + "/" + System.DateTime.Today.Day.ToString + "/" + System.DateTime.Today.Year.ToString
 
-            For Each nodeF As XmlNode In nodosFases
-                faseLunarActual = nodeF.InnerText
-            Next
+            'Dim XPathFaseHoy As String = "//phase[../date='" + hoy + "']/text()"
+            'Dim nodosFases = documento.SelectNodes(XPathFaseHoy)
 
-            Dim NodosHoras As XmlNodeList = xmlDoc.SelectNodes("//dia/estado_cielo/@periodo")
-            Dim NodosNubes As XmlNodeList = xmlDoc.SelectNodes("//dia/estado_cielo/@descripcion")
-            Dim nodeh As XmlNode
-            Dim noden As XmlNode
+            'For Each nodeF As XmlNode In nodosFases
+            '    faseLunarActual = nodeF.InnerText
+            'Next
 
-            Dim datos(47) As String
-            Dim posicion As Integer
-            For Each nodeh In NodosHoras
+            'Dim NodosHoras As XmlNodeList = xmlDoc.SelectNodes("//dia/estado_cielo/@periodo")
+            'Dim NodosNubes As XmlNodeList = xmlDoc.SelectNodes("//dia/estado_cielo/@descripcion")
+            'Dim nodeh As XmlNode
+            'Dim noden As XmlNode
 
-                datos(posicion) += nodeh.InnerText + ":00"
-                posicion += 1
-            Next
-            posicion = 0
-            For Each noden In NodosNubes
-                datos(posicion) += " " + noden.InnerText
-                posicion += 1
-            Next
-            Console.Write(datos)
+            'Dim datos() As String = Prevision.getCondicionesCieloActuales()
 
+            'Dim posicion As Integer
+            'For Each nodeh In NodosHoras
+
+            '    datos(posicion) += nodeh.InnerText + ":00"
+            '    posicion += 1
+            'Next
+            'posicion = 0
+            'For Each noden In NodosNubes
+            '    datos(posicion) += " " + noden.InnerText
+            '    posicion += 1
+            'Next
+            'Console.Write(datos)
+
+            Dim datos() = Prevision.getCondicionesCieloActuales()
 
             Dim var As Integer
             Dim p As Integer = 0
