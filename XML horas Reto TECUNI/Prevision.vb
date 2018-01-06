@@ -21,14 +21,18 @@ Public Class Prevision
 
     Public Shared Sub calcularPerfilActual()
         Try
-            Dim webRequest As WebRequest = WebRequest.Create("http://www.aemet.es/xml/municipios_h/localidad_h_48020.xml")
-
-
-            Dim webResponse As WebResponse = webRequest.GetResponse
-            Dim webStream As Stream = webResponse.GetResponseStream
-
             Dim xmlDoc As New XmlDocument
-            xmlDoc.Load(webStream)
+            Try
+                Dim webRequest As WebRequest = WebRequest.Create("http://www.aemet.es/xml/municipios_h/localidad_h_48020.xml")
+
+                Dim webResponse As WebResponse = webRequest.GetResponse
+                Dim webStream As Stream = webResponse.GetResponseStream
+
+                xmlDoc.Load(webStream)
+                xmlDoc.Save("tiempo.xml")
+            Catch ex As Exception
+                xmlDoc.Load("tiempo.xml")
+            End Try
 
             'Cargamos XML de fases lunares en la variable
             Dim rutaFases As String = "D:\DAM3-2\RETO\TECUNI\XML\FasesLunares.xml"
@@ -73,10 +77,10 @@ Public Class Prevision
 
         Catch ex As Exception
 
-
-
         End Try
     End Sub
+
+
 
 
     Public Shared Sub calcularFaseLunar()

@@ -41,6 +41,7 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.cbPerfiles = New System.Windows.Forms.ComboBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.PanelIzq.SuspendLayout()
@@ -218,6 +219,15 @@ Partial Class Form1
         Me.cbPerfiles.Size = New System.Drawing.Size(158, 21)
         Me.cbPerfiles.TabIndex = 2
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(318, 17)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(56, 48)
+        Me.Button4.TabIndex = 20
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,6 +237,7 @@ Partial Class Form1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(993, 585)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lvOtrasCondiciones)
@@ -281,4 +292,5 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents cbPerfiles As System.Windows.Forms.ComboBox
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

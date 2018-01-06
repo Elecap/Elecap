@@ -8,20 +8,22 @@ Public Class Form4
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim ventanaGestion As New Form1
+        Dim ventanaGestion As New GestorPerfiles
+
+
         Me.Hide()
         ventanaGestion.Show()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim ventanaPrevision As New lvCondicionesCelestesActuales
+        Dim ventanaPrevision As New CurvaActual
 
         Me.Hide()
         ventanaPrevision.Show()
     End Sub
 
     Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim cargaDatos As New lvCondicionesCelestesActuales
+        ' Dim cargaDatos As New lvCondicionesCelestesActuales
 
 
 
@@ -72,7 +74,7 @@ Public Class Form4
     End Sub
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
-        Dim ventanaPrevision As New lvCondicionesCelestesActuales
+        Dim ventanaPrevision As New CurvaActual
 
         Me.Hide()
         ventanaPrevision.Show()
@@ -85,5 +87,17 @@ Public Class Form4
     Private Sub Button3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         End
 
+    End Sub
+
+    Private Sub Button2_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Dim test As New testConexion
+
+        Me.Hide()
+        test.Show()
+    End Sub
+
+    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
+        Dim configuracion As New FormSettings
+        configuracion.Show()
     End Sub
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class CurvaActual
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class CurvaActual
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CurvaActual))
         Me.pbCurvaBegona = New System.Windows.Forms.PictureBox()
@@ -29,7 +29,6 @@ Partial Class CurvaActual
         Me.Label3 = New System.Windows.Forms.Label()
         Me.pbCurvaSantutxu = New System.Windows.Forms.PictureBox()
         Me.pbCurvaBolueta = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.lblExplicacionSantutxu = New System.Windows.Forms.Label()
         Me.lblExplicacionBegona = New System.Windows.Forms.Label()
         Me.lblExplicacionBolueta = New System.Windows.Forms.Label()
@@ -37,11 +36,22 @@ Partial Class CurvaActual
         Me.pbLuna = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.numHoras = New System.Windows.Forms.NumericUpDown()
+        Me.lblLuna = New System.Windows.Forms.Label()
+        Me.lblCondicion = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lbHora = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         CType(Me.pbCurvaBegona, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaSantutxu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaBolueta, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCielo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbLuna, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.numHoras, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pbCurvaBegona
@@ -113,18 +123,6 @@ Partial Class CurvaActual
         Me.pbCurvaBolueta.TabIndex = 5
         Me.pbCurvaBolueta.TabStop = False
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Quicksand Light", 25.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(802, 49)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(102, 50)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "19:00"
-        '
         'lblExplicacionSantutxu
         '
         Me.lblExplicacionSantutxu.BackColor = System.Drawing.Color.Transparent
@@ -162,8 +160,8 @@ Partial Class CurvaActual
         '
         Me.pbCielo.BackColor = System.Drawing.Color.Transparent
         Me.pbCielo.BackgroundImage = CType(resources.GetObject("pbCielo.BackgroundImage"), System.Drawing.Image)
-        Me.pbCielo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbCielo.Location = New System.Drawing.Point(698, 40)
+        Me.pbCielo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.pbCielo.Location = New System.Drawing.Point(704, 42)
         Me.pbCielo.Name = "pbCielo"
         Me.pbCielo.Size = New System.Drawing.Size(81, 77)
         Me.pbCielo.TabIndex = 11
@@ -173,8 +171,8 @@ Partial Class CurvaActual
         '
         Me.pbLuna.BackColor = System.Drawing.Color.Transparent
         Me.pbLuna.BackgroundImage = CType(resources.GetObject("pbLuna.BackgroundImage"), System.Drawing.Image)
-        Me.pbLuna.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbLuna.Location = New System.Drawing.Point(595, 40)
+        Me.pbLuna.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.pbLuna.Location = New System.Drawing.Point(547, 44)
         Me.pbLuna.Name = "pbLuna"
         Me.pbLuna.Size = New System.Drawing.Size(81, 77)
         Me.pbLuna.TabIndex = 12
@@ -208,13 +206,181 @@ Partial Class CurvaActual
         Me.Button3.Text = "X"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'numHoras
+        '
+        Me.numHoras.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.numHoras.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.numHoras.Font = New System.Drawing.Font("Quicksand Light", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.numHoras.ForeColor = System.Drawing.SystemColors.Info
+        Me.numHoras.Location = New System.Drawing.Point(810, 59)
+        Me.numHoras.Maximum = New Decimal(New Integer() {30, 0, 0, 0})
+        Me.numHoras.Minimum = New Decimal(New Integer() {1, 0, 0, -2147483648})
+        Me.numHoras.Name = "numHoras"
+        Me.numHoras.ReadOnly = True
+        Me.numHoras.Size = New System.Drawing.Size(14, 40)
+        Me.numHoras.TabIndex = 15
+        Me.numHoras.Tag = ""
+        Me.numHoras.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left
+        Me.numHoras.Value = New Decimal(New Integer() {18, 0, 0, 0})
+        '
+        'lblLuna
+        '
+        Me.lblLuna.BackColor = System.Drawing.Color.Transparent
+        Me.lblLuna.Font = New System.Drawing.Font("Quicksand Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLuna.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblLuna.Location = New System.Drawing.Point(498, 112)
+        Me.lblLuna.Name = "lblLuna"
+        Me.lblLuna.Size = New System.Drawing.Size(160, 34)
+        Me.lblLuna.TabIndex = 14
+        Me.lblLuna.Text = "Tipo de Luna"
+        Me.lblLuna.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblCondicion
+        '
+        Me.lblCondicion.BackColor = System.Drawing.Color.Transparent
+        Me.lblCondicion.Font = New System.Drawing.Font("Quicksand Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCondicion.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblCondicion.Location = New System.Drawing.Point(664, 117)
+        Me.lblCondicion.Name = "lblCondicion"
+        Me.lblCondicion.Size = New System.Drawing.Size(160, 57)
+        Me.lblCondicion.TabIndex = 16
+        Me.lblCondicion.Text = "Condicion celeste"
+        Me.lblCondicion.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button1.Location = New System.Drawing.Point(892, 14)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(34, 34)
+        Me.Button1.TabIndex = 17
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'lbHora
+        '
+        Me.lbHora.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lbHora.Font = New System.Drawing.Font("Quicksand Light", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbHora.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lbHora.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.lbHora.Location = New System.Drawing.Point(827, 59)
+        Me.lbHora.Margin = New System.Windows.Forms.Padding(0)
+        Me.lbHora.Name = "lbHora"
+        Me.lbHora.Size = New System.Drawing.Size(93, 40)
+        Me.lbHora.TabIndex = 18
+        Me.lbHora.Text = ": 00"
+        Me.lbHora.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Quicksand Light", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label4.Location = New System.Drawing.Point(923, 53)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(46, 50)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "h."
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button2.Location = New System.Drawing.Point(591, 340)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(34, 34)
+        Me.Button2.TabIndex = 20
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button4.Location = New System.Drawing.Point(892, 340)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(34, 34)
+        Me.Button4.TabIndex = 21
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Transparent
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button5.Location = New System.Drawing.Point(248, 340)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(34, 34)
+        Me.Button5.TabIndex = 22
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.Transparent
+        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button6.Location = New System.Drawing.Point(835, 13)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(34, 34)
+        Me.Button6.TabIndex = 23
+        Me.Button6.UseVisualStyleBackColor = False
+        '
         'CurvaActual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(993, 585)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lbHora)
+        Me.Controls.Add(Me.numHoras)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.lblCondicion)
+        Me.Controls.Add(Me.lblLuna)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.pbLuna)
@@ -222,7 +388,6 @@ Partial Class CurvaActual
         Me.Controls.Add(Me.lblExplicacionBolueta)
         Me.Controls.Add(Me.lblExplicacionBegona)
         Me.Controls.Add(Me.lblExplicacionSantutxu)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.pbCurvaBolueta)
         Me.Controls.Add(Me.pbCurvaSantutxu)
         Me.Controls.Add(Me.Label3)
@@ -238,6 +403,7 @@ Partial Class CurvaActual
         CType(Me.pbCurvaBolueta, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCielo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbLuna, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.numHoras, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -248,12 +414,21 @@ Partial Class CurvaActual
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents pbCurvaSantutxu As System.Windows.Forms.PictureBox
     Friend WithEvents pbCurvaBolueta As System.Windows.Forms.PictureBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents lblExplicacionSantutxu As System.Windows.Forms.Label
     Friend WithEvents lblExplicacionBegona As System.Windows.Forms.Label
     Friend WithEvents lblExplicacionBolueta As System.Windows.Forms.Label
     Friend WithEvents pbCielo As System.Windows.Forms.PictureBox
-    Friend WithEvents pbLuna As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Button3 As Windows.Forms.Button
+    Friend WithEvents numHoras As Windows.Forms.NumericUpDown
+    Friend WithEvents lblLuna As Windows.Forms.Label
+    Friend WithEvents lblCondicion As Windows.Forms.Label
+    Friend WithEvents Button1 As Windows.Forms.Button
+    Friend WithEvents lbHora As Windows.Forms.Label
+    Friend WithEvents Label4 As Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents pbLuna As System.Windows.Forms.PictureBox
+    Friend WithEvents Button6 As System.Windows.Forms.Button
 End Class

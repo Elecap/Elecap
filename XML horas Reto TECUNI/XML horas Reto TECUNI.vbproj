@@ -9,11 +9,11 @@
     </SchemaVersion>
     <ProjectGuid>{8A990684-FB52-4778-9105-0F9B7862200B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ConsoleApplication1.Intro</StartupObject>
+    <StartupObject>ConsoleApplication1.My.MyApplication</StartupObject>
     <RootNamespace>ConsoleApplication1</RootNamespace>
     <AssemblyName>XML horas Reto TECUNI</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <PublishUrl>publish\</PublishUrl>
@@ -65,6 +65,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nsoftware.IPWorks">
+      <HintPath>C:\Users\Lydia\AppData\Local\Microsoft\VisualStudio\15.0_2c8b6978\Extensions\ta1by0kw.ss0\nsoftware.IPWorks.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -86,10 +89,29 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreadorPerfiles.Designer.vb">
+      <DependentUpon>CreadorPerfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreadorPerfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CurvaActual.Designer.vb">
       <DependentUpon>CurvaActual.vb</DependentUpon>
     </Compile>
     <Compile Include="CurvaActual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurvaAElegir.Designer.vb">
+      <DependentUpon>CurvaAElegir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CurvaAElegir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurvaGenerada.vb" />
+    <Compile Include="ErrorForm.Designer.vb">
+      <DependentUpon>ErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
@@ -122,6 +144,30 @@
     <Compile Include="Form5.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSettings.Designer.vb">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZoom.Designer.vb">
+      <DependentUpon>FormZoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormZoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestorPerfiles.Designer.vb">
+      <DependentUpon>GestorPerfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestorPerfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.vb">
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Intro.Designer.vb">
       <DependentUpon>Intro.vb</DependentUpon>
     </Compile>
@@ -143,11 +189,44 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NavegaciónLateral.Designer.vb">
+      <DependentUpon>NavegaciónLateral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NavegaciónLateral.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Prevision.vb" />
+    <Compile Include="SuccessForm.Designer.vb">
+      <DependentUpon>SuccessForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuccessForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestComm.Designer.vb">
+      <DependentUpon>TestComm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestComm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testConexion.Designer.vb">
+      <DependentUpon>testConexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="testConexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CreadorPerfiles.resx">
+      <DependentUpon>CreadorPerfiles.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CurvaActual.resx">
       <DependentUpon>CurvaActual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurvaAElegir.resx">
+      <DependentUpon>CurvaAElegir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorForm.resx">
+      <DependentUpon>ErrorForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -164,14 +243,39 @@
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZoom.resx">
+      <DependentUpon>FormZoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestorPerfiles.resx">
+      <DependentUpon>GestorPerfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Intro.resx">
       <DependentUpon>Intro.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavegaciónLateral.resx">
+      <DependentUpon>NavegaciónLateral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuccessForm.resx">
+      <DependentUpon>SuccessForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestComm.resx">
+      <DependentUpon>TestComm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testConexion.resx">
+      <DependentUpon>testConexion.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

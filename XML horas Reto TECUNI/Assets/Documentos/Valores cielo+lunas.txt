@@ -1,0 +1,21 @@
+Cielo
+=======
+Despejado				
+Nuboso					
+Intervalos nubosos			
+Poco nuboso				
+Cubierto				
+Cubierto con lluvia escasa		
+Nuboso con lluvia escasa		
+Muy nuboso con lluvia escasa		
+Intervalor nubosos con lluvia escasa	
+Muy nuboso
+Muy nuboso con lluvia
+
+
+Fases Lunares
+===
+Luna Nueva				0
+Cuarto Creciente			-10
+Luna llena				-20
+Cuato menguante				-10

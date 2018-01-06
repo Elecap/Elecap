@@ -1,0 +1,55 @@
+ENVIAMOS ->  :0000040000274B0002001B
+RECIBIMOS -> :0000040000274B000200000358
+PERIFERICO: 03
+QUE ES 58????
+
+:0000100000271000010001D3
+:	>> inicio mensaje (3A) 
+0000	>> identificador terminal Nº DE PERIFERICO
+10          >> función
+00002710	>> dirección inicio
+0001	>> nº de registros (*)
+00	>> valor literal ‘00’ fijo y sin uso
+01          >> datos
+D3          >> CRC
+LF          >> final mensaje (0A)
+
+
+:0000100000271000010001D3
+:	>> inicio mensaje (3A) 
+identificador terminal Nº DE PERIFERICO
+0000 - Nuestro periférico
+
+función 00
+10 - 
+04 - 
+
+dirección inicio 00000000
+
+
+nº de registros (*)
+
+valor literal ‘00’ fijo y sin uso
+
+datos
+
+CRC
+
+final mensaje (0A)
+
+
+
+:0066100000273F00010020AE
+:0066100000274200000024
+:00661000002B0F00000009
+:00020400002743000A0019
+
+
+
+
+*-> :0000100000271000010001D3<LF> necesario
+** -> 1000002712000200010350 (10s)
+*** -> 1000002712000200000351 (inmediato)
+
+00001000002712000200010152
+
