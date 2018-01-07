@@ -12,4 +12,26 @@
         Me.Hide()
         pantallaPrincipal.Show()
     End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        Dim ventanaPrincipal As New Form4
+        ventanaPrincipal.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        Dim ventanaPrevision As New CurvaActual
+        ventanaPrevision.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Dim ventanaConexion As New testConexion
+        ventanaConexion.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        End
+    End Sub
 End Class

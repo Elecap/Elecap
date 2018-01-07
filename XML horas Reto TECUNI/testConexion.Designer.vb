@@ -240,10 +240,10 @@ Partial Class testConexion
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 130)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(14, 130)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(331, 89)
+        Me.PictureBox1.Size = New System.Drawing.Size(328, 89)
         Me.PictureBox1.TabIndex = 29
         Me.PictureBox1.TabStop = False
         '
@@ -269,6 +269,7 @@ Partial Class testConexion
         Me.Controls.Add(Me.pbS1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "testConexion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "testConexion"
         CType(Me.pbS1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbS2, System.ComponentModel.ISupportInitialize).EndInit()

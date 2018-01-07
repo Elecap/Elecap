@@ -53,12 +53,22 @@ Partial Class CreadorPerfiles
         Me.Button5 = New System.Windows.Forms.Button()
         Me.tbDescripcion = New System.Windows.Forms.TextBox()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(42, 49)
+        Me.TextBox1.Location = New System.Drawing.Point(142, 49)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(341, 32)
         Me.TextBox1.TabIndex = 0
@@ -69,7 +79,7 @@ Partial Class CreadorPerfiles
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(700, 101)
+        Me.Button1.Location = New System.Drawing.Point(800, 101)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(253, 131)
         Me.Button1.TabIndex = 1
@@ -81,7 +91,7 @@ Partial Class CreadorPerfiles
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Location = New System.Drawing.Point(700, 259)
+        Me.Button2.Location = New System.Drawing.Point(800, 259)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(253, 131)
         Me.Button2.TabIndex = 2
@@ -93,7 +103,7 @@ Partial Class CreadorPerfiles
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Location = New System.Drawing.Point(700, 418)
+        Me.Button3.Location = New System.Drawing.Point(800, 418)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(253, 131)
         Me.Button3.TabIndex = 3
@@ -103,7 +113,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbIntervalosNubososLluviaEscasa.AutoSize = True
         Me.cbIntervalosNubososLluviaEscasa.BackColor = System.Drawing.Color.Transparent
-        Me.cbIntervalosNubososLluviaEscasa.Location = New System.Drawing.Point(68, 338)
+        Me.cbIntervalosNubososLluviaEscasa.Location = New System.Drawing.Point(168, 338)
         Me.cbIntervalosNubososLluviaEscasa.Name = "cbIntervalosNubososLluviaEscasa"
         Me.cbIntervalosNubososLluviaEscasa.Size = New System.Drawing.Size(200, 17)
         Me.cbIntervalosNubososLluviaEscasa.TabIndex = 17
@@ -114,7 +124,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbMuyNubosoLluviaEscasa.AutoSize = True
         Me.cbMuyNubosoLluviaEscasa.BackColor = System.Drawing.Color.Transparent
-        Me.cbMuyNubosoLluviaEscasa.Location = New System.Drawing.Point(68, 315)
+        Me.cbMuyNubosoLluviaEscasa.Location = New System.Drawing.Point(168, 315)
         Me.cbMuyNubosoLluviaEscasa.Name = "cbMuyNubosoLluviaEscasa"
         Me.cbMuyNubosoLluviaEscasa.Size = New System.Drawing.Size(169, 17)
         Me.cbMuyNubosoLluviaEscasa.TabIndex = 16
@@ -125,7 +135,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbNubosoLluviaEscasa.AutoSize = True
         Me.cbNubosoLluviaEscasa.BackColor = System.Drawing.Color.Transparent
-        Me.cbNubosoLluviaEscasa.Location = New System.Drawing.Point(68, 291)
+        Me.cbNubosoLluviaEscasa.Location = New System.Drawing.Point(168, 291)
         Me.cbNubosoLluviaEscasa.Name = "cbNubosoLluviaEscasa"
         Me.cbNubosoLluviaEscasa.Size = New System.Drawing.Size(148, 17)
         Me.cbNubosoLluviaEscasa.TabIndex = 15
@@ -136,7 +146,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbCubiertoLluviaEscasa.AutoSize = True
         Me.cbCubiertoLluviaEscasa.BackColor = System.Drawing.Color.Transparent
-        Me.cbCubiertoLluviaEscasa.Location = New System.Drawing.Point(68, 267)
+        Me.cbCubiertoLluviaEscasa.Location = New System.Drawing.Point(168, 267)
         Me.cbCubiertoLluviaEscasa.Name = "cbCubiertoLluviaEscasa"
         Me.cbCubiertoLluviaEscasa.Size = New System.Drawing.Size(148, 17)
         Me.cbCubiertoLluviaEscasa.TabIndex = 14
@@ -147,7 +157,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbCubierto.AutoSize = True
         Me.cbCubierto.BackColor = System.Drawing.Color.Transparent
-        Me.cbCubierto.Location = New System.Drawing.Point(68, 243)
+        Me.cbCubierto.Location = New System.Drawing.Point(168, 243)
         Me.cbCubierto.Name = "cbCubierto"
         Me.cbCubierto.Size = New System.Drawing.Size(65, 17)
         Me.cbCubierto.TabIndex = 13
@@ -158,7 +168,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbPocoNuboso.AutoSize = True
         Me.cbPocoNuboso.BackColor = System.Drawing.Color.Transparent
-        Me.cbPocoNuboso.Location = New System.Drawing.Point(67, 220)
+        Me.cbPocoNuboso.Location = New System.Drawing.Point(167, 220)
         Me.cbPocoNuboso.Name = "cbPocoNuboso"
         Me.cbPocoNuboso.Size = New System.Drawing.Size(89, 17)
         Me.cbPocoNuboso.TabIndex = 12
@@ -169,7 +179,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbIntervalosNubosos.AutoSize = True
         Me.cbIntervalosNubosos.BackColor = System.Drawing.Color.Transparent
-        Me.cbIntervalosNubosos.Location = New System.Drawing.Point(67, 197)
+        Me.cbIntervalosNubosos.Location = New System.Drawing.Point(167, 197)
         Me.cbIntervalosNubosos.Name = "cbIntervalosNubosos"
         Me.cbIntervalosNubosos.Size = New System.Drawing.Size(115, 17)
         Me.cbIntervalosNubosos.TabIndex = 11
@@ -180,7 +190,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbNuboso.AutoSize = True
         Me.cbNuboso.BackColor = System.Drawing.Color.Transparent
-        Me.cbNuboso.Location = New System.Drawing.Point(68, 174)
+        Me.cbNuboso.Location = New System.Drawing.Point(168, 174)
         Me.cbNuboso.Name = "cbNuboso"
         Me.cbNuboso.Size = New System.Drawing.Size(63, 17)
         Me.cbNuboso.TabIndex = 10
@@ -191,7 +201,7 @@ Partial Class CreadorPerfiles
         '
         Me.cbDespejado.AutoSize = True
         Me.cbDespejado.BackColor = System.Drawing.Color.Transparent
-        Me.cbDespejado.Location = New System.Drawing.Point(68, 151)
+        Me.cbDespejado.Location = New System.Drawing.Point(168, 151)
         Me.cbDespejado.Name = "cbDespejado"
         Me.cbDespejado.Size = New System.Drawing.Size(77, 17)
         Me.cbDespejado.TabIndex = 9
@@ -203,7 +213,7 @@ Partial Class CreadorPerfiles
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(96, Byte), Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(475, 49)
+        Me.Button4.Location = New System.Drawing.Point(575, 49)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(106, 29)
         Me.Button4.TabIndex = 18
@@ -217,7 +227,7 @@ Partial Class CreadorPerfiles
         Me.Label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label10.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(371, 313)
+        Me.Label10.Location = New System.Drawing.Point(471, 313)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(210, 28)
         Me.Label10.TabIndex = 23
@@ -230,7 +240,7 @@ Partial Class CreadorPerfiles
         Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label5.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(51, 112)
+        Me.Label5.Location = New System.Drawing.Point(151, 112)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(270, 28)
         Me.Label5.TabIndex = 22
@@ -243,7 +253,7 @@ Partial Class CreadorPerfiles
         Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label4.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(382, 112)
+        Me.Label4.Location = New System.Drawing.Point(482, 112)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(199, 28)
         Me.Label4.TabIndex = 21
@@ -256,7 +266,7 @@ Partial Class CreadorPerfiles
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(62, 373)
+        Me.Label2.Location = New System.Drawing.Point(162, 373)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(278, 28)
         Me.Label2.TabIndex = 19
@@ -265,7 +275,7 @@ Partial Class CreadorPerfiles
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(387, 450)
+        Me.CheckBox4.Location = New System.Drawing.Point(487, 450)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox4.TabIndex = 33
@@ -274,7 +284,7 @@ Partial Class CreadorPerfiles
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(387, 422)
+        Me.CheckBox3.Location = New System.Drawing.Point(487, 422)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox3.TabIndex = 32
@@ -283,7 +293,7 @@ Partial Class CreadorPerfiles
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(387, 394)
+        Me.CheckBox2.Location = New System.Drawing.Point(487, 394)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox2.TabIndex = 31
@@ -292,7 +302,7 @@ Partial Class CreadorPerfiles
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(387, 366)
+        Me.CheckBox1.Location = New System.Drawing.Point(487, 366)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox1.TabIndex = 30
@@ -305,7 +315,7 @@ Partial Class CreadorPerfiles
         Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label9.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(427, 439)
+        Me.Label9.Location = New System.Drawing.Point(527, 439)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(175, 28)
         Me.Label9.TabIndex = 29
@@ -318,7 +328,7 @@ Partial Class CreadorPerfiles
         Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label8.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(427, 411)
+        Me.Label8.Location = New System.Drawing.Point(527, 411)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(100, 28)
         Me.Label8.TabIndex = 28
@@ -331,7 +341,7 @@ Partial Class CreadorPerfiles
         Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label7.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(427, 383)
+        Me.Label7.Location = New System.Drawing.Point(527, 383)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(154, 28)
         Me.Label7.TabIndex = 27
@@ -344,7 +354,7 @@ Partial Class CreadorPerfiles
         Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label6.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(427, 355)
+        Me.Label6.Location = New System.Drawing.Point(527, 355)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(113, 28)
         Me.Label6.TabIndex = 26
@@ -352,7 +362,7 @@ Partial Class CreadorPerfiles
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(387, 142)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(487, 142)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 24
         '
@@ -361,7 +371,7 @@ Partial Class CreadorPerfiles
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(87, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(117, Byte), Integer))
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(411, 496)
+        Me.Button5.Location = New System.Drawing.Point(511, 496)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(106, 29)
         Me.Button5.TabIndex = 34
@@ -370,7 +380,7 @@ Partial Class CreadorPerfiles
         '
         'tbDescripcion
         '
-        Me.tbDescripcion.Location = New System.Drawing.Point(68, 411)
+        Me.tbDescripcion.Location = New System.Drawing.Point(168, 411)
         Me.tbDescripcion.Multiline = True
         Me.tbDescripcion.Name = "tbDescripcion"
         Me.tbDescripcion.Size = New System.Drawing.Size(261, 95)
@@ -386,12 +396,67 @@ Partial Class CreadorPerfiles
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button6.Location = New System.Drawing.Point(959, -3)
+        Me.Button6.Location = New System.Drawing.Point(1059, -3)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(34, 36)
         Me.Button6.TabIndex = 36
         Me.Button6.Text = "X"
         Me.Button6.UseVisualStyleBackColor = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox5.ErrorImage = CType(resources.GetObject("PictureBox5.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(-3, 457)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(91, 117)
+        Me.PictureBox5.TabIndex = 41
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox4.ErrorImage = CType(resources.GetObject("PictureBox4.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(-3, 115)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(91, 102)
+        Me.PictureBox4.TabIndex = 40
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox3.ErrorImage = CType(resources.GetObject("PictureBox3.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(-3, 223)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(91, 105)
+        Me.PictureBox3.TabIndex = 39
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(-2, 334)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(90, 117)
+        Me.PictureBox2.TabIndex = 38
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.ErrorImage = CType(resources.GetObject("PictureBox1.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-3, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(91, 105)
+        Me.PictureBox1.TabIndex = 37
+        Me.PictureBox1.TabStop = False
         '
         'CreadorPerfiles
         '
@@ -400,7 +465,12 @@ Partial Class CreadorPerfiles
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(216, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(993, 585)
+        Me.ClientSize = New System.Drawing.Size(1093, 585)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.tbDescripcion)
         Me.Controls.Add(Me.Button5)
@@ -435,6 +505,11 @@ Partial Class CreadorPerfiles
         Me.Name = "CreadorPerfiles"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CreadorPerfiles"
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -469,4 +544,9 @@ Partial Class CreadorPerfiles
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents tbDescripcion As Windows.Forms.TextBox
     Friend WithEvents Button6 As Windows.Forms.Button
+    Friend WithEvents PictureBox5 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
 End Class

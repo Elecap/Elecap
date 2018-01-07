@@ -46,12 +46,22 @@ Partial Class CurvaActual
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         CType(Me.pbCurvaBegona, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaSantutxu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaBolueta, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCielo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbLuna, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numHoras, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pbCurvaBegona
@@ -59,7 +69,7 @@ Partial Class CurvaActual
         Me.pbCurvaBegona.BackColor = System.Drawing.Color.Transparent
         Me.pbCurvaBegona.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbCurvaBegona.InitialImage = Nothing
-        Me.pbCurvaBegona.Location = New System.Drawing.Point(91, 229)
+        Me.pbCurvaBegona.Location = New System.Drawing.Point(187, 230)
         Me.pbCurvaBegona.Name = "pbCurvaBegona"
         Me.pbCurvaBegona.Size = New System.Drawing.Size(151, 126)
         Me.pbCurvaBegona.TabIndex = 0
@@ -71,7 +81,7 @@ Partial Class CurvaActual
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Quicksand Light", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(100, 170)
+        Me.Label1.Location = New System.Drawing.Point(196, 171)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(142, 50)
         Me.Label1.TabIndex = 1
@@ -83,7 +93,7 @@ Partial Class CurvaActual
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Quicksand Light", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(425, 170)
+        Me.Label2.Location = New System.Drawing.Point(521, 171)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 50)
         Me.Label2.TabIndex = 2
@@ -95,7 +105,7 @@ Partial Class CurvaActual
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Quicksand Light", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label3.Location = New System.Drawing.Point(736, 170)
+        Me.Label3.Location = New System.Drawing.Point(832, 171)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(140, 50)
         Me.Label3.TabIndex = 3
@@ -106,7 +116,7 @@ Partial Class CurvaActual
         Me.pbCurvaSantutxu.BackColor = System.Drawing.Color.Transparent
         Me.pbCurvaSantutxu.BackgroundImage = CType(resources.GetObject("pbCurvaSantutxu.BackgroundImage"), System.Drawing.Image)
         Me.pbCurvaSantutxu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbCurvaSantutxu.Location = New System.Drawing.Point(430, 229)
+        Me.pbCurvaSantutxu.Location = New System.Drawing.Point(526, 230)
         Me.pbCurvaSantutxu.Name = "pbCurvaSantutxu"
         Me.pbCurvaSantutxu.Size = New System.Drawing.Size(151, 126)
         Me.pbCurvaSantutxu.TabIndex = 4
@@ -117,7 +127,7 @@ Partial Class CurvaActual
         Me.pbCurvaBolueta.BackColor = System.Drawing.Color.Transparent
         Me.pbCurvaBolueta.BackgroundImage = CType(resources.GetObject("pbCurvaBolueta.BackgroundImage"), System.Drawing.Image)
         Me.pbCurvaBolueta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbCurvaBolueta.Location = New System.Drawing.Point(735, 229)
+        Me.pbCurvaBolueta.Location = New System.Drawing.Point(831, 230)
         Me.pbCurvaBolueta.Name = "pbCurvaBolueta"
         Me.pbCurvaBolueta.Size = New System.Drawing.Size(151, 126)
         Me.pbCurvaBolueta.TabIndex = 5
@@ -128,7 +138,7 @@ Partial Class CurvaActual
         Me.lblExplicacionSantutxu.BackColor = System.Drawing.Color.Transparent
         Me.lblExplicacionSantutxu.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblExplicacionSantutxu.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblExplicacionSantutxu.Location = New System.Drawing.Point(356, 377)
+        Me.lblExplicacionSantutxu.Location = New System.Drawing.Point(452, 378)
         Me.lblExplicacionSantutxu.Name = "lblExplicacionSantutxu"
         Me.lblExplicacionSantutxu.Size = New System.Drawing.Size(282, 133)
         Me.lblExplicacionSantutxu.TabIndex = 8
@@ -139,7 +149,7 @@ Partial Class CurvaActual
         Me.lblExplicacionBegona.BackColor = System.Drawing.Color.Transparent
         Me.lblExplicacionBegona.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblExplicacionBegona.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblExplicacionBegona.Location = New System.Drawing.Point(38, 377)
+        Me.lblExplicacionBegona.Location = New System.Drawing.Point(134, 378)
         Me.lblExplicacionBegona.Name = "lblExplicacionBegona"
         Me.lblExplicacionBegona.Size = New System.Drawing.Size(282, 133)
         Me.lblExplicacionBegona.TabIndex = 9
@@ -150,7 +160,7 @@ Partial Class CurvaActual
         Me.lblExplicacionBolueta.BackColor = System.Drawing.Color.Transparent
         Me.lblExplicacionBolueta.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblExplicacionBolueta.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblExplicacionBolueta.Location = New System.Drawing.Point(675, 377)
+        Me.lblExplicacionBolueta.Location = New System.Drawing.Point(771, 378)
         Me.lblExplicacionBolueta.Name = "lblExplicacionBolueta"
         Me.lblExplicacionBolueta.Size = New System.Drawing.Size(282, 133)
         Me.lblExplicacionBolueta.TabIndex = 10
@@ -161,7 +171,7 @@ Partial Class CurvaActual
         Me.pbCielo.BackColor = System.Drawing.Color.Transparent
         Me.pbCielo.BackgroundImage = CType(resources.GetObject("pbCielo.BackgroundImage"), System.Drawing.Image)
         Me.pbCielo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.pbCielo.Location = New System.Drawing.Point(704, 42)
+        Me.pbCielo.Location = New System.Drawing.Point(800, 43)
         Me.pbCielo.Name = "pbCielo"
         Me.pbCielo.Size = New System.Drawing.Size(81, 77)
         Me.pbCielo.TabIndex = 11
@@ -172,7 +182,7 @@ Partial Class CurvaActual
         Me.pbLuna.BackColor = System.Drawing.Color.Transparent
         Me.pbLuna.BackgroundImage = CType(resources.GetObject("pbLuna.BackgroundImage"), System.Drawing.Image)
         Me.pbLuna.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.pbLuna.Location = New System.Drawing.Point(547, 44)
+        Me.pbLuna.Location = New System.Drawing.Point(643, 45)
         Me.pbLuna.Name = "pbLuna"
         Me.pbLuna.Size = New System.Drawing.Size(81, 77)
         Me.pbLuna.TabIndex = 12
@@ -183,7 +193,7 @@ Partial Class CurvaActual
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Quicksand Light", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label5.Location = New System.Drawing.Point(12, 37)
+        Me.Label5.Location = New System.Drawing.Point(108, 38)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(511, 86)
         Me.Label5.TabIndex = 13
@@ -199,7 +209,7 @@ Partial Class CurvaActual
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button3.Location = New System.Drawing.Point(947, 12)
+        Me.Button3.Location = New System.Drawing.Point(1043, 13)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(34, 36)
         Me.Button3.TabIndex = 14
@@ -212,7 +222,7 @@ Partial Class CurvaActual
         Me.numHoras.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.numHoras.Font = New System.Drawing.Font("Quicksand Light", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.numHoras.ForeColor = System.Drawing.SystemColors.Info
-        Me.numHoras.Location = New System.Drawing.Point(810, 59)
+        Me.numHoras.Location = New System.Drawing.Point(906, 60)
         Me.numHoras.Maximum = New Decimal(New Integer() {30, 0, 0, 0})
         Me.numHoras.Minimum = New Decimal(New Integer() {1, 0, 0, -2147483648})
         Me.numHoras.Name = "numHoras"
@@ -228,7 +238,7 @@ Partial Class CurvaActual
         Me.lblLuna.BackColor = System.Drawing.Color.Transparent
         Me.lblLuna.Font = New System.Drawing.Font("Quicksand Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLuna.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblLuna.Location = New System.Drawing.Point(498, 112)
+        Me.lblLuna.Location = New System.Drawing.Point(594, 113)
         Me.lblLuna.Name = "lblLuna"
         Me.lblLuna.Size = New System.Drawing.Size(160, 34)
         Me.lblLuna.TabIndex = 14
@@ -240,7 +250,7 @@ Partial Class CurvaActual
         Me.lblCondicion.BackColor = System.Drawing.Color.Transparent
         Me.lblCondicion.Font = New System.Drawing.Font("Quicksand Light", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCondicion.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblCondicion.Location = New System.Drawing.Point(664, 117)
+        Me.lblCondicion.Location = New System.Drawing.Point(760, 118)
         Me.lblCondicion.Name = "lblCondicion"
         Me.lblCondicion.Size = New System.Drawing.Size(160, 57)
         Me.lblCondicion.TabIndex = 16
@@ -259,7 +269,7 @@ Partial Class CurvaActual
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(892, 14)
+        Me.Button1.Location = New System.Drawing.Point(988, 15)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(34, 34)
         Me.Button1.TabIndex = 17
@@ -271,10 +281,10 @@ Partial Class CurvaActual
         Me.lbHora.Font = New System.Drawing.Font("Quicksand Light", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbHora.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.lbHora.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.lbHora.Location = New System.Drawing.Point(827, 59)
+        Me.lbHora.Location = New System.Drawing.Point(923, 60)
         Me.lbHora.Margin = New System.Windows.Forms.Padding(0)
         Me.lbHora.Name = "lbHora"
-        Me.lbHora.Size = New System.Drawing.Size(93, 40)
+        Me.lbHora.Size = New System.Drawing.Size(110, 40)
         Me.lbHora.TabIndex = 18
         Me.lbHora.Text = ": 00"
         Me.lbHora.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -285,7 +295,7 @@ Partial Class CurvaActual
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Quicksand Light", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(923, 53)
+        Me.Label4.Location = New System.Drawing.Point(1019, 54)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(46, 50)
         Me.Label4.TabIndex = 19
@@ -303,7 +313,7 @@ Partial Class CurvaActual
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(591, 340)
+        Me.Button2.Location = New System.Drawing.Point(687, 341)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(34, 34)
         Me.Button2.TabIndex = 20
@@ -321,7 +331,7 @@ Partial Class CurvaActual
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button4.Location = New System.Drawing.Point(892, 340)
+        Me.Button4.Location = New System.Drawing.Point(988, 341)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(34, 34)
         Me.Button4.TabIndex = 21
@@ -339,7 +349,7 @@ Partial Class CurvaActual
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button5.Location = New System.Drawing.Point(248, 340)
+        Me.Button5.Location = New System.Drawing.Point(344, 341)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(34, 34)
         Me.Button5.TabIndex = 22
@@ -357,11 +367,66 @@ Partial Class CurvaActual
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button6.Location = New System.Drawing.Point(835, 13)
+        Me.Button6.Location = New System.Drawing.Point(931, 14)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(34, 34)
         Me.Button6.TabIndex = 23
         Me.Button6.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.ErrorImage = CType(resources.GetObject("PictureBox1.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-2, 15)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(91, 105)
+        Me.PictureBox1.TabIndex = 24
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(-2, 123)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(90, 97)
+        Me.PictureBox2.TabIndex = 25
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox3.ErrorImage = CType(resources.GetObject("PictureBox3.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(-2, 226)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(91, 105)
+        Me.PictureBox3.TabIndex = 26
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox4.ErrorImage = CType(resources.GetObject("PictureBox4.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(-2, 337)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(91, 117)
+        Me.PictureBox4.TabIndex = 27
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox5.ErrorImage = CType(resources.GetObject("PictureBox5.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(-2, 460)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(91, 117)
+        Me.PictureBox5.TabIndex = 28
+        Me.PictureBox5.TabStop = False
         '
         'CurvaActual
         '
@@ -370,7 +435,12 @@ Partial Class CurvaActual
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(993, 585)
+        Me.ClientSize = New System.Drawing.Size(1093, 585)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -404,6 +474,11 @@ Partial Class CurvaActual
         CType(Me.pbCielo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbLuna, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.numHoras, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -431,4 +506,9 @@ Partial Class CurvaActual
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents pbLuna As System.Windows.Forms.PictureBox
     Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As Windows.Forms.PictureBox
 End Class

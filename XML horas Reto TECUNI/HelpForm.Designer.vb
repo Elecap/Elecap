@@ -50,7 +50,7 @@ Partial Class HelpForm
         Me.pbBase.BackColor = System.Drawing.Color.Transparent
         Me.pbBase.BackgroundImage = CType(resources.GetObject("pbBase.BackgroundImage"), System.Drawing.Image)
         Me.pbBase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbBase.Location = New System.Drawing.Point(113, 73)
+        Me.pbBase.Location = New System.Drawing.Point(213, 73)
         Me.pbBase.Name = "pbBase"
         Me.pbBase.Size = New System.Drawing.Size(229, 225)
         Me.pbBase.TabIndex = 5
@@ -61,7 +61,7 @@ Partial Class HelpForm
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(127, 100)
+        Me.PictureBox1.Location = New System.Drawing.Point(227, 100)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(52, 184)
         Me.PictureBox1.TabIndex = 6
@@ -72,7 +72,7 @@ Partial Class HelpForm
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(175, 100)
+        Me.PictureBox2.Location = New System.Drawing.Point(275, 100)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(51, 184)
         Me.PictureBox2.TabIndex = 7
@@ -83,7 +83,7 @@ Partial Class HelpForm
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(224, 100)
+        Me.PictureBox3.Location = New System.Drawing.Point(324, 100)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(50, 184)
         Me.PictureBox3.TabIndex = 8
@@ -94,7 +94,7 @@ Partial Class HelpForm
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.Location = New System.Drawing.Point(270, 100)
+        Me.PictureBox4.Location = New System.Drawing.Point(370, 100)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(54, 184)
         Me.PictureBox4.TabIndex = 9
@@ -105,7 +105,7 @@ Partial Class HelpForm
         Me.pbCurvaElegida.BackColor = System.Drawing.Color.Transparent
         Me.pbCurvaElegida.BackgroundImage = CType(resources.GetObject("pbCurvaElegida.BackgroundImage"), System.Drawing.Image)
         Me.pbCurvaElegida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbCurvaElegida.Location = New System.Drawing.Point(629, 73)
+        Me.pbCurvaElegida.Location = New System.Drawing.Point(729, 73)
         Me.pbCurvaElegida.Name = "pbCurvaElegida"
         Me.pbCurvaElegida.Size = New System.Drawing.Size(227, 225)
         Me.pbCurvaElegida.TabIndex = 10
@@ -121,7 +121,7 @@ Partial Class HelpForm
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button3.Location = New System.Drawing.Point(942, 12)
+        Me.Button3.Location = New System.Drawing.Point(1042, 12)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(39, 33)
         Me.Button3.TabIndex = 22
@@ -149,7 +149,7 @@ Partial Class HelpForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Quicksand Light", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(48, 414)
+        Me.Label3.Location = New System.Drawing.Point(148, 414)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(226, 38)
         Me.Label3.TabIndex = 25
@@ -161,7 +161,7 @@ Partial Class HelpForm
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Quicksand Light", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(685, 414)
+        Me.Label4.Location = New System.Drawing.Point(785, 414)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(226, 38)
         Me.Label4.TabIndex = 26
@@ -174,7 +174,7 @@ Partial Class HelpForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(993, 585)
+        Me.ClientSize = New System.Drawing.Size(1093, 585)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button3)

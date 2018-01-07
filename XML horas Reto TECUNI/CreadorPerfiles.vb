@@ -3,15 +3,15 @@
 Public Class CreadorPerfiles
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\FondoGestorPerfiles-Larreagaburu.png")
+        Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\FondoGestorPerfiles-LarreagaburuG.png")
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\FondoGestorPerfiles-Miraflores.png")
+        Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\FondoGestorPerfiles-MirafloresG.png")
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\FondoGestorPerfiles-Basilica.png")
+        Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\FondoGestorPerfiles-BasilicaG.png")
     End Sub
 
     Private Sub cbIntervalosNubososLluviaEscasa_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -97,5 +97,31 @@ Public Class CreadorPerfiles
         Me.Close()
         Dim gestorDePerfiles As New GestorPerfiles
         gestorDePerfiles.Show()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Dim ventanaPrincipal As New Form4
+        ventanaPrincipal.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        Dim ventanaPrevision As New CurvaActual
+        ventanaPrevision.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Dim ventanaConexion As New testConexion
+        ventanaConexion.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        End
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
     End Sub
 End Class

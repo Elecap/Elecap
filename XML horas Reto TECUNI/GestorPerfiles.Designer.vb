@@ -45,14 +45,24 @@ Partial Class GestorPerfiles
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ComboBox1
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(40, 46)
+        Me.ComboBox1.Location = New System.Drawing.Point(138, 47)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(366, 33)
         Me.ComboBox1.TabIndex = 0
@@ -64,7 +74,7 @@ Partial Class GestorPerfiles
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Quicksand Light", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(651, 45)
+        Me.Label1.Location = New System.Drawing.Point(749, 46)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(186, 30)
         Me.Label1.TabIndex = 1
@@ -72,7 +82,7 @@ Partial Class GestorPerfiles
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(397, 169)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(495, 170)
         Me.MonthCalendar1.MaxSelectionCount = 100
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.ScrollChange = 1
@@ -82,7 +92,7 @@ Partial Class GestorPerfiles
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Font = New System.Drawing.Font("Quicksand Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(88, 169)
+        Me.TextBox1.Location = New System.Drawing.Point(186, 170)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(266, 159)
@@ -92,7 +102,7 @@ Partial Class GestorPerfiles
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(88, 403)
+        Me.ListBox1.Location = New System.Drawing.Point(186, 404)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(262, 134)
         Me.ListBox1.TabIndex = 4
@@ -104,7 +114,7 @@ Partial Class GestorPerfiles
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(83, 125)
+        Me.Label2.Location = New System.Drawing.Point(181, 126)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(278, 28)
         Me.Label2.TabIndex = 5
@@ -115,7 +125,7 @@ Partial Class GestorPerfiles
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(673, 169)
+        Me.PictureBox1.Location = New System.Drawing.Point(771, 170)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(232, 209)
         Me.PictureBox1.TabIndex = 6
@@ -128,7 +138,7 @@ Partial Class GestorPerfiles
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label3.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(665, 125)
+        Me.Label3.Location = New System.Drawing.Point(763, 126)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(240, 28)
         Me.Label3.TabIndex = 7
@@ -141,7 +151,7 @@ Partial Class GestorPerfiles
         Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label4.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(392, 125)
+        Me.Label4.Location = New System.Drawing.Point(490, 126)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(199, 28)
         Me.Label4.TabIndex = 8
@@ -154,7 +164,7 @@ Partial Class GestorPerfiles
         Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label5.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(83, 350)
+        Me.Label5.Location = New System.Drawing.Point(181, 351)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(270, 28)
         Me.Label5.TabIndex = 9
@@ -167,7 +177,7 @@ Partial Class GestorPerfiles
         Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label6.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(437, 409)
+        Me.Label6.Location = New System.Drawing.Point(535, 410)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(113, 28)
         Me.Label6.TabIndex = 10
@@ -180,7 +190,7 @@ Partial Class GestorPerfiles
         Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label7.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(437, 437)
+        Me.Label7.Location = New System.Drawing.Point(535, 438)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(154, 28)
         Me.Label7.TabIndex = 11
@@ -193,7 +203,7 @@ Partial Class GestorPerfiles
         Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label8.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(437, 465)
+        Me.Label8.Location = New System.Drawing.Point(535, 466)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(100, 28)
         Me.Label8.TabIndex = 12
@@ -206,7 +216,7 @@ Partial Class GestorPerfiles
         Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label9.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(437, 493)
+        Me.Label9.Location = New System.Drawing.Point(535, 494)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(175, 28)
         Me.Label9.TabIndex = 13
@@ -215,7 +225,7 @@ Partial Class GestorPerfiles
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(397, 420)
+        Me.CheckBox1.Location = New System.Drawing.Point(495, 421)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox1.TabIndex = 14
@@ -224,7 +234,7 @@ Partial Class GestorPerfiles
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(397, 448)
+        Me.CheckBox2.Location = New System.Drawing.Point(495, 449)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox2.TabIndex = 15
@@ -233,7 +243,7 @@ Partial Class GestorPerfiles
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(397, 476)
+        Me.CheckBox3.Location = New System.Drawing.Point(495, 477)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox3.TabIndex = 16
@@ -242,7 +252,7 @@ Partial Class GestorPerfiles
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(397, 504)
+        Me.CheckBox4.Location = New System.Drawing.Point(495, 505)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox4.TabIndex = 17
@@ -255,7 +265,7 @@ Partial Class GestorPerfiles
         Me.Label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label10.Font = New System.Drawing.Font("Quicksand Light", 14.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(392, 350)
+        Me.Label10.Location = New System.Drawing.Point(490, 351)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(210, 28)
         Me.Label10.TabIndex = 18
@@ -263,7 +273,7 @@ Partial Class GestorPerfiles
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(422, 48)
+        Me.Button1.Location = New System.Drawing.Point(520, 49)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(88, 30)
         Me.Button1.TabIndex = 19
@@ -272,7 +282,7 @@ Partial Class GestorPerfiles
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(516, 48)
+        Me.Button2.Location = New System.Drawing.Point(614, 49)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(88, 30)
         Me.Button2.TabIndex = 20
@@ -289,19 +299,79 @@ Partial Class GestorPerfiles
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button3.Location = New System.Drawing.Point(956, -4)
+        Me.Button3.Location = New System.Drawing.Point(1054, -3)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(39, 33)
         Me.Button3.TabIndex = 21
         Me.Button3.Text = "X"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox5.ErrorImage = CType(resources.GetObject("PictureBox5.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(-1, 460)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(91, 117)
+        Me.PictureBox5.TabIndex = 46
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox4.ErrorImage = CType(resources.GetObject("PictureBox4.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(-1, 118)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(91, 102)
+        Me.PictureBox4.TabIndex = 45
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox3.ErrorImage = CType(resources.GetObject("PictureBox3.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(-1, 226)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(91, 105)
+        Me.PictureBox3.TabIndex = 44
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 337)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(90, 117)
+        Me.PictureBox2.TabIndex = 43
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox6.ErrorImage = CType(resources.GetObject("PictureBox6.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(-1, 15)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(91, 105)
+        Me.PictureBox6.TabIndex = 42
+        Me.PictureBox6.TabStop = False
+        '
         'GestorPerfiles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(993, 585)
+        Me.ClientSize = New System.Drawing.Size(1093, 585)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -329,6 +399,11 @@ Partial Class GestorPerfiles
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GestorPerfiles"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -355,4 +430,9 @@ Partial Class GestorPerfiles
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As Windows.Forms.Button
+    Friend WithEvents PictureBox5 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As Windows.Forms.PictureBox
 End Class
