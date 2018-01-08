@@ -2,23 +2,32 @@
     Dim encendido1 As Boolean = False
     Dim encendido2 As Boolean = False
     Dim encendido3 As Boolean = False
-    Dim encendido4 As Boolean = False
+
+
+
+
+
+    Public Sub apagarA()
+        Intro.c.enviarComando("1000002712000200000351")
+        pbS1.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\luz_OFF2.png")
+    End Sub
+
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
-        While True
-            If encendido1 = True Then
-                pbS1.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\luz_OFF2.png")
-                encendido1 = False
-                Exit While
-            End If
-            If encendido1 = False Then
+        If encendido1 = True Then
+            Me.apagarA()
+            encendido1 = False
+        Else
+            If Intro.c.enviarComando("4E220000002712000200010350") Then
                 pbS1.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\luz_ON3.png")
                 encendido1 = True
-                Exit While
+                MsgBox("TRUE " + Intro.c.iBufferIN)
+            Else
+                MsgBox("ERROR " + Intro.c.iBufferIN)
+                MsgBox("Error al encender la salida")
             End If
-        End While
-
+        End If
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -51,20 +60,7 @@
         End While
     End Sub
 
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        While True
-            If encendido4 = True Then
-                pbS4.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\luz_OFF2.png")
-                encendido4 = False
-                Exit While
-            End If
-            If encendido4 = False Then
-                pbS4.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\luz_ON3.png")
-                encendido4 = True
-                Exit While
-            End If
-        End While
-    End Sub
+
 
     Private Sub testConexion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         comprobarErrores()

@@ -1,5 +1,6 @@
 ﻿Public Class Intro
 
+    Public c As New ConexionX
 
 
     Private Sub Intro_Activated(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Activated
@@ -14,7 +15,7 @@
 
 
     Private Sub Intro_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        c.conectar()
         Timer1.Enabled = True
 
     End Sub

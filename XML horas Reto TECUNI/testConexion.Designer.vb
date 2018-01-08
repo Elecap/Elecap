@@ -27,14 +27,11 @@ Partial Class testConexion
         Me.pbS1 = New System.Windows.Forms.PictureBox()
         Me.pbS2 = New System.Windows.Forms.PictureBox()
         Me.pbS3 = New System.Windows.Forms.PictureBox()
-        Me.pbS4 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.pbWarning1 = New System.Windows.Forms.PictureBox()
         Me.pbWarning2 = New System.Windows.Forms.PictureBox()
-        Me.pbWarning4 = New System.Windows.Forms.PictureBox()
         Me.pbWarning3 = New System.Windows.Forms.PictureBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Ipport1 = New nsoftware.IPWorks.Ipport(Me.components)
@@ -42,10 +39,8 @@ Partial Class testConexion
         CType(Me.pbS1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbS2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbS3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbS4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbWarning1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbWarning2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbWarning4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbWarning3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,17 +78,6 @@ Partial Class testConexion
         Me.pbS3.Size = New System.Drawing.Size(121, 192)
         Me.pbS3.TabIndex = 2
         Me.pbS3.TabStop = False
-        '
-        'pbS4
-        '
-        Me.pbS4.BackColor = System.Drawing.Color.Transparent
-        Me.pbS4.BackgroundImage = CType(resources.GetObject("pbS4.BackgroundImage"), System.Drawing.Image)
-        Me.pbS4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbS4.Location = New System.Drawing.Point(830, 130)
-        Me.pbS4.Name = "pbS4"
-        Me.pbS4.Size = New System.Drawing.Size(121, 192)
-        Me.pbS4.TabIndex = 3
-        Me.pbS4.TabStop = False
         '
         'Button2
         '
@@ -149,24 +133,6 @@ Partial Class testConexion
         Me.Button3.TabIndex = 23
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button4.Location = New System.Drawing.Point(857, 412)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(65, 64)
-        Me.Button4.TabIndex = 24
-        Me.Button4.UseVisualStyleBackColor = False
-        '
         'pbWarning1
         '
         Me.pbWarning1.BackColor = System.Drawing.Color.Transparent
@@ -190,18 +156,6 @@ Partial Class testConexion
         Me.pbWarning2.Size = New System.Drawing.Size(46, 44)
         Me.pbWarning2.TabIndex = 26
         Me.pbWarning2.TabStop = False
-        '
-        'pbWarning4
-        '
-        Me.pbWarning4.BackColor = System.Drawing.Color.Transparent
-        Me.pbWarning4.BackgroundImage = CType(resources.GetObject("pbWarning4.BackgroundImage"), System.Drawing.Image)
-        Me.pbWarning4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbWarning4.InitialImage = Nothing
-        Me.pbWarning4.Location = New System.Drawing.Point(925, 292)
-        Me.pbWarning4.Name = "pbWarning4"
-        Me.pbWarning4.Size = New System.Drawing.Size(46, 44)
-        Me.pbWarning4.TabIndex = 26
-        Me.pbWarning4.TabStop = False
         '
         'pbWarning3
         '
@@ -255,15 +209,12 @@ Partial Class testConexion
         Me.ClientSize = New System.Drawing.Size(993, 585)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.pbWarning3)
-        Me.Controls.Add(Me.pbWarning4)
         Me.Controls.Add(Me.pbWarning2)
         Me.Controls.Add(Me.pbWarning1)
-        Me.Controls.Add(Me.pbS4)
         Me.Controls.Add(Me.pbS3)
         Me.Controls.Add(Me.pbS2)
         Me.Controls.Add(Me.pbS1)
@@ -274,10 +225,8 @@ Partial Class testConexion
         CType(Me.pbS1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbS2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbS3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbS4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbWarning1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbWarning2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbWarning4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbWarning3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -286,14 +235,11 @@ Partial Class testConexion
     Friend WithEvents pbS1 As System.Windows.Forms.PictureBox
     Friend WithEvents pbS2 As System.Windows.Forms.PictureBox
     Friend WithEvents pbS3 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbS4 As System.Windows.Forms.PictureBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents pbWarning1 As System.Windows.Forms.PictureBox
     Friend WithEvents pbWarning2 As System.Windows.Forms.PictureBox
-    Friend WithEvents pbWarning4 As System.Windows.Forms.PictureBox
     Friend WithEvents pbWarning3 As System.Windows.Forms.PictureBox
     Friend WithEvents Button5 As Windows.Forms.Button
     Friend WithEvents Ipport1 As nsoftware.IPWorks.Ipport

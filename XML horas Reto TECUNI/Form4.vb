@@ -25,7 +25,17 @@ Public Class Form4
     Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Dim cargaDatos As New lvCondicionesCelestesActuales
 
+        comprobarConexion()
 
+    End Sub
+
+    Private Sub comprobarConexion()
+
+        If Intro.c.estaConectado Then
+            Me.pbEstado.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Connected.png")
+        Else
+            Me.pbEstado.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\NotConnected.png")
+        End If
 
     End Sub
 
@@ -96,7 +106,7 @@ Public Class Form4
         test.Show()
     End Sub
 
-    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbEstado.Click
         Dim configuracion As New FormSettings
         configuracion.Show()
     End Sub

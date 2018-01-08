@@ -90,6 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
+    <Compile Include="ConexionX.Designer.vb">
+      <DependentUpon>ConexionX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConexionX.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CreadorPerfiles.Designer.vb">
       <DependentUpon>CreadorPerfiles.vb</DependentUpon>
     </Compile>
@@ -217,6 +223,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ConexionX.resx">
+      <DependentUpon>ConexionX.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreadorPerfiles.resx">
       <DependentUpon>CreadorPerfiles.vb</DependentUpon>
     </EmbeddedResource>
