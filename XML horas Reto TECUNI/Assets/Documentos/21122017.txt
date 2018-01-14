@@ -1,7 +1,7 @@
 ENVIAMOS ->  :0000040000274B0002001B
 RECIBIMOS -> :0000040000274B000200000358
 PERIFERICO: 03
-QUE ES 58????
+QUE ES 58???? 
 
 :0000100000271000010001D3
 :	>> inicio mensaje (3A) 
@@ -18,7 +18,7 @@ LF          >> final mensaje (0A)
 :0000100000271000010001D3
 :	>> inicio mensaje (3A) 
 identificador terminal Nº DE PERIFERICO
-0000 - Nuestro periférico
+0003 - Nuestro periférico
 
 función 00
 10 - 
@@ -53,3 +53,5 @@ final mensaje (0A)
 
 00001000002712000200010152
 
+:0003800174 <-- Cuando intentamos darle luz a algo y no funsiona
+:0003900272 <-- Error al mandar curva

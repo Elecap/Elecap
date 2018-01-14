@@ -1,1 +1,1 @@
-Despejado#50$Nuboso#70$Intervalos nubosos#70$Poco nuboso#70$Cubierto#80$Cubierto con lluvia escasa#80$Nuboso con lluvia escasa#90$Muy nuboso con lluvia escasa#100$Intervalos nubosos con lluvia escasa#80$Muy nuboso#90$Muy nuboso con lluvia#100$Nubes altas#60
+Despejado#50$Nuboso#70$Intervalos nubosos#70$Poco nuboso#70$Cubierto#60$Cubierto con lluvia escasa#70$Nuboso con lluvia escasa#60$Muy nuboso con lluvia escasa#100$Intervalos nubosos con lluvia escasa#80$Muy nuboso#90$Muy nuboso con lluvia#100$Nubes altas#60

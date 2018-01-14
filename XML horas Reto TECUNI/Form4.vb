@@ -24,8 +24,10 @@ Public Class Form4
 
     Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Dim cargaDatos As New lvCondicionesCelestesActuales
-
+        Intro.c.enviarComando(":0003100000271000010000B7")
         comprobarConexion()
+
+
 
     End Sub
 
@@ -99,7 +101,7 @@ Public Class Form4
 
     End Sub
 
-    Private Sub Button2_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click_2(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim test As New testConexion
 
         Me.Hide()
@@ -107,7 +109,22 @@ Public Class Form4
     End Sub
 
     Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbEstado.Click
-        Dim configuracion As New FormSettings
+        Dim configuracion As New ConexionEstado
         configuracion.Show()
+    End Sub
+
+    Private Sub PictureBox2_Click_1(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Dim test As New testConexion
+        test.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button2_Click_3(sender As Object, e As EventArgs) Handles btnOk.Click
+        Me.pbTip.Visible = False
+        Me.btnOk.Visible = False
+    End Sub
+
+    Private Sub pbTip_Click(sender As Object, e As EventArgs) Handles pbTip.Click
+
     End Sub
 End Class

@@ -26,10 +26,14 @@ Partial Class Form4
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.pbEstado = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.pbTip = New System.Windows.Forms.PictureBox()
+        Me.btnOk = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbEstado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbTip, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -71,16 +75,6 @@ Partial Class Form4
         Me.Button3.TabIndex = 5
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Cyan
-        Me.Button2.Location = New System.Drawing.Point(262, 6)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(171, 60)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
         'pbEstado
         '
         Me.pbEstado.BackColor = System.Drawing.Color.Transparent
@@ -94,6 +88,45 @@ Partial Class Form4
         Me.pbEstado.TabIndex = 7
         Me.pbEstado.TabStop = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox2.ErrorImage = CType(resources.GetObject("PictureBox2.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(177, 301)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(328, 45)
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
+        'pbTip
+        '
+        Me.pbTip.BackColor = System.Drawing.Color.Transparent
+        Me.pbTip.BackgroundImage = CType(resources.GetObject("pbTip.BackgroundImage"), System.Drawing.Image)
+        Me.pbTip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbTip.Location = New System.Drawing.Point(0, -1)
+        Me.pbTip.Name = "pbTip"
+        Me.pbTip.Size = New System.Drawing.Size(668, 409)
+        Me.pbTip.TabIndex = 9
+        Me.pbTip.TabStop = False
+        Me.pbTip.Visible = False
+        '
+        'btnOk
+        '
+        Me.btnOk.BackColor = System.Drawing.Color.Transparent
+        Me.btnOk.BackgroundImage = CType(resources.GetObject("btnOk.BackgroundImage"), System.Drawing.Image)
+        Me.btnOk.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnOk.FlatAppearance.BorderSize = 0
+        Me.btnOk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnOk.Location = New System.Drawing.Point(299, 119)
+        Me.btnOk.Name = "btnOk"
+        Me.btnOk.Size = New System.Drawing.Size(93, 50)
+        Me.btnOk.TabIndex = 10
+        Me.btnOk.UseVisualStyleBackColor = False
+        Me.btnOk.Visible = False
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -102,8 +135,10 @@ Partial Class Form4
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(668, 409)
+        Me.Controls.Add(Me.btnOk)
         Me.Controls.Add(Me.pbEstado)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.pbTip)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
@@ -116,12 +151,16 @@ Partial Class Form4
         Me.TransparencyKey = System.Drawing.Color.Lime
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbEstado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbTip, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents pbEstado As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As Windows.Forms.PictureBox
+    Friend WithEvents pbTip As Windows.Forms.PictureBox
+    Friend WithEvents btnOk As Windows.Forms.Button
 End Class

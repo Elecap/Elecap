@@ -16,6 +16,7 @@
 
     Private Sub Intro_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         c.conectar()
+        c.enviarComando(":0000100000271000010001D3")
         Timer1.Enabled = True
 
     End Sub
@@ -38,6 +39,8 @@
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Dim ventana As Form4 = New Form4
         ventana.Show()
+        ventana.pbTip.Visible = True
+        ventana.btnOk.Visible = True
         Me.Hide()
         Timer1.Enabled = False
 

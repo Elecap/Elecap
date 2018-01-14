@@ -77,20 +77,26 @@ Public Class CurvaActual
 
     Private Sub dibujarCurvas()
         Dim nCurva = (CurvaGenerada.getCurvaElegida + 1).ToString
-        Me.curvaBegona = nCurva
-        Me.curvaSantutxu = nCurva
-        Me.curvaBolueta = nCurva
+        Me.curvaBegona = (CurvaGenerada.getCurvaElegida("Begoña") + 1).ToString
+        Me.curvaSantutxu = (CurvaGenerada.getCurvaElegida("Santutxu") + 1).ToString
+        Me.curvaBolueta = (CurvaGenerada.getCurvaElegida("Bolueta") + 1).ToString
 
-        Me.pbCurvaBegona.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Curva" + nCurva + "-2.png")
-        Me.pbCurvaBolueta.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Curva" + nCurva + "-2.png")
-        Me.pbCurvaSantutxu.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Curva" + nCurva + "-2.png")
+        Me.pbCurvaBegona.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Curva" + curvaBegona + "-2.png")
+        Me.pbCurvaBolueta.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Curva" + curvaSantutxu + "-2.png")
+        Me.pbCurvaSantutxu.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Curva" + curvaBolueta + "-2.png")
     End Sub
+    Private Sub cargarFecha()
+        Me.lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
 
+
+
+    End Sub
     Private Sub CurvaActual_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.lbHora.Text = Me.numHoras.Value.ToString + ":00"
         establecerFondo()
         establecerIconos()
         dibujarCurva()
+        cargarFecha()
         'Me.PictureBox1.Visible = False
 
 
@@ -116,7 +122,7 @@ Public Class CurvaActual
         If condicion.Contains("espejado") Then
             Me.pbCielo.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Cielos\despejado.png")
         End If
-        If condicion.Contains("Muy nuboso") Or condicion.Contains("Cubierto") Or condicion.Contains("Intervalos nubosos") Or condicion.Contains("Poco nuboso") Then
+        If condicion.Contains("Muy nuboso") Or condicion.Contains("Cubierto") Or condicion.Contains("Intervalos nubosos") Or condicion.Contains("uboso") Or condicion.Contains("ubes altas") Then
             Me.pbCielo.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Cielos\MuyNuboso.png")
         End If
         If condicion.Contains("Nuboso con lluvia escasa") Or condicion.Contains("lluvia") Then
@@ -125,6 +131,7 @@ Public Class CurvaActual
         If condicion.Contains("Muy nuboso con lluvia escasa") Then
             Me.pbCielo.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Cielos\MuyNubosoLluviaEscasa.png")
         End If
+
     End Sub
 
     Private Sub establecerFondo()
@@ -142,7 +149,7 @@ Public Class CurvaActual
 
         Dim condicionHoraSeleccionada = estadoCieloHoraSeleccionada.Substring(6, estadoCieloHoraSeleccionada.Length - 6)
 
-        If condicionHoraSeleccionada.Contains("nuboso") Or condicionHoraSeleccionada.Contains("ubierto") Then
+        If condicionHoraSeleccionada.Contains("uboso") Or condicionHoraSeleccionada.Contains("ubierto") Then
             Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\CurvaDeEstaNocheFondo-NubesG.png")
         End If
         If condicionHoraSeleccionada.Contains("espejado") Then
@@ -151,7 +158,7 @@ Public Class CurvaActual
         If condicionHoraSeleccionada.Contains("luvia") Or condicionHoraSeleccionada.Contains("lluvioso") Then
             Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\CurvaDeEstaNocheFondo-LluviosoG.png")
         End If
-        If condicionHoraSeleccionada.Contains("Poco nuboso") Then
+        If condicionHoraSeleccionada.Contains("Poco nuboso") Or condicionHoraSeleccionada.Contains("ubes altas") Then
             Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\CurvaDeEstaNocheFondo-PocoNubosoG.png")
         End If
         If condicionHoraSeleccionada = "Cubierto" Then

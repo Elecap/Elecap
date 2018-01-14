@@ -1,6 +1,7 @@
 ﻿Imports System.Xml
 
 Public Class CreadorPerfiles
+    Dim ventanaCurvas As New CurvaAElegir
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\FondoGestorPerfiles-LarreagaburuG.png")
@@ -51,10 +52,15 @@ Public Class CreadorPerfiles
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Dim ventanaCurvas As New CurvaAElegir
-        ventanaCurvas.Show()
-        Me.Button5.Text = "Elegir curva " + "(" + ventanaCurvas.getCurvaElegida.ToString + ")"
 
+
+        ventanaCurvas.Show()
+        'Me.Button5.Text = "Elegir curva " + "(" + ventanaCurvas.curvaElegida.ToString + ")"
+
+    End Sub
+
+    Private Sub ventanaCurvas_evento(i As Integer)
+        Me.Button5.Text = "Elegir curva " + "(" + i.ToString + ")"
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
@@ -123,5 +129,9 @@ Public Class CreadorPerfiles
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
 
+    End Sub
+
+    Private Sub CreadorPerfiles_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler ventanaCurvas.evento, AddressOf ventanaCurvas_evento
     End Sub
 End Class

@@ -15,7 +15,7 @@ Public Class ConexionX
 
     Public Function conectar()
         Try
-            If comenzarCliente("12.168.100.100", "8000") Then
+            If comenzarCliente("192.168.100.100", "8000") Then
                 'Me.pbEstado.BackgroundImage = System.Drawing.Image.FromFile("D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Connected.png")
                 'Me.pbEstadoTexto.Text = "Conectado"
                 estaConectado = True
@@ -63,11 +63,16 @@ Public Class ConexionX
     Private Sub Ipport_OnSSLStatus(sender As Object, e As IpportSSLStatusEventArgs)
 
     End Sub
+    Public Sub desconectar()
+        puertoIP.Disconnect()
+    End Sub
 
     Private Sub ConexionX_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+    Public Sub getEstaConectado()
 
+    End Sub
     Private Sub puertoIP_OnSSLStatus(sender As Object, e As IpportSSLStatusEventArgs) Handles puertoIP.OnSSLStatus
 
     End Sub

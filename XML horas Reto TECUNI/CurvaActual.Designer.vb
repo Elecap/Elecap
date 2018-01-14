@@ -51,6 +51,10 @@ Partial Class CurvaActual
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.lblFecha = New System.Windows.Forms.Label()
         CType(Me.pbCurvaBegona, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaSantutxu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCurvaBolueta, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -193,7 +197,7 @@ Partial Class CurvaActual
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Quicksand Light", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label5.Location = New System.Drawing.Point(108, 38)
+        Me.Label5.Location = New System.Drawing.Point(105, 13)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(511, 86)
         Me.Label5.TabIndex = 13
@@ -428,6 +432,71 @@ Partial Class CurvaActual
         Me.PictureBox5.TabIndex = 28
         Me.PictureBox5.TabStop = False
         '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.Transparent
+        Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
+        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button7.Location = New System.Drawing.Point(165, 341)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(34, 34)
+        Me.Button7.TabIndex = 29
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Transparent
+        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button8.Location = New System.Drawing.Point(505, 337)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(34, 34)
+        Me.Button8.TabIndex = 30
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.Transparent
+        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.Button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button9.Location = New System.Drawing.Point(812, 337)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(34, 34)
+        Me.Button9.TabIndex = 31
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'lblFecha
+        '
+        Me.lblFecha.BackColor = System.Drawing.Color.Transparent
+        Me.lblFecha.Font = New System.Drawing.Font("Quicksand Light", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblFecha.Location = New System.Drawing.Point(176, 73)
+        Me.lblFecha.Name = "lblFecha"
+        Me.lblFecha.Size = New System.Drawing.Size(282, 86)
+        Me.lblFecha.TabIndex = 32
+        Me.lblFecha.Text = "00/00/0000"
+        '
         'CurvaActual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -436,6 +505,10 @@ Partial Class CurvaActual
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1093, 585)
+        Me.Controls.Add(Me.lblFecha)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
@@ -511,4 +584,8 @@ Partial Class CurvaActual
     Friend WithEvents PictureBox3 As Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As Windows.Forms.PictureBox
     Friend WithEvents PictureBox5 As Windows.Forms.PictureBox
+    Friend WithEvents Button7 As Windows.Forms.Button
+    Friend WithEvents Button8 As Windows.Forms.Button
+    Friend WithEvents Button9 As Windows.Forms.Button
+    Friend WithEvents lblFecha As Windows.Forms.Label
 End Class

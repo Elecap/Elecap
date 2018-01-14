@@ -90,10 +90,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
+    <Compile Include="ConexionEstado.Designer.vb">
+      <DependentUpon>ConexionEstado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConexionEstado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ConexionX.Designer.vb">
       <DependentUpon>ConexionX.vb</DependentUpon>
     </Compile>
     <Compile Include="ConexionX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConxionEnviarCurva.Designer.vb">
+      <DependentUpon>ConxionEnviarCurva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConxionEnviarCurva.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CreadorPerfiles.Designer.vb">
@@ -223,8 +235,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ConexionEstado.resx">
+      <DependentUpon>ConexionEstado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConexionX.resx">
       <DependentUpon>ConexionX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConxionEnviarCurva.resx">
+      <DependentUpon>ConxionEnviarCurva.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreadorPerfiles.resx">
       <DependentUpon>CreadorPerfiles.vb</DependentUpon>

@@ -66,25 +66,49 @@
 
                     curvaIdeal(posicion) = valorReal
 
-                        'posicion = posicion + 1
-                        If posicion = 4 Then
-                            Exit For
+                    'posicion = posicion + 1
+                    If posicion = 4 Then
+                        Exit For
 
-                        End If
                     End If
+                End If
             Next
             posicion = posicion + 1
         Next
     End Sub
-
     Public Shared Function getCurvaElegida() As Integer
-        elegirCurva()
+        elegirCurva("")
         Return curvaElegida
 
     End Function
 
-    Public Shared Sub elegirCurva()
+    Public Shared Function getCurvaElegida(ByVal zona As String) As Integer
+        elegirCurva(zona)
+        Return curvaElegida
+
+    End Function
+
+    Public Shared Sub elegirCurva(ByVal zona As String)
         getCurvaIdeal()
+        If zona = "Santutxu" Then
+            curvaIdeal(0) += 10
+            curvaIdeal(1) += 10
+            curvaIdeal(2) += 10
+            curvaIdeal(3) += 10
+        End If
+        If zona = "Bolueta" Then
+            curvaIdeal(0) += 20
+            curvaIdeal(1) += 20
+            curvaIdeal(2) += 20
+            curvaIdeal(3) += 20
+        End If
+        If zona = "Begoña" Then
+            curvaIdeal(0) += -5
+            curvaIdeal(1) += -5
+            curvaIdeal(2) += -5
+            curvaIdeal(3) += -5
+        End If
+
         Dim fichero As String = "D:\DAM3-2\RETO\TECUNI\XML horas Reto TECUNI\XML horas Reto TECUNI\Assets\Documentos\Curvas.txt"
         Dim contenidoFichero As New System.IO.StreamReader(fichero)
         Dim arrayCurvasExistentes = contenidoFichero.ReadToEnd.Split("$")
